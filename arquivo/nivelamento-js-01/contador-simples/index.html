@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/favicon.ico" type="image/x-icon">
+
+    <title>Contador Simples!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to top, #1d1d1d, #D7D7D7);
+        }
+
+        section {
+            padding: 50px;
+            font-size: 50px;
+            border-radius: 50px;
+            background-image: linear-gradient(to left, hsl(185, 43%, 90%), #242222);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 12px;
+            border-radius: 25px;
+        }
+
+        #btnAumentar {
+            color: #ECECEC;
+            background-image: linear-gradient(to top, #002B40, #EF9C00);
+        }
+
+        #btnDiminuir {
+            color: #ECECEC;
+            background-image: linear-gradient(to left, hsl(184, 86%, 11%), #ca2424);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1 id="numeroContador">0</h1>
+        <button id="btnAumentar">Aumenta!</button>
+        <button id="btnDiminuir">Diminuir!</button>
+    </section>
+
+    <script>
+        const numeroContador = document.getElementById('numeroContador');
+        const btnAumentar = document.getElementById('btnAumentar');
+        const btnDiminuir = document.getElementById('btnDiminuir');
+
+        let contador = 0;
+
+        function atualizarNumero() {
+            numeroContador.textContent = contador;
+        }
+
+        btnAumentar.addEventListener('click', function () {
+            contador++;
+            atualizarNumero();
+        });
+
+        btnDiminuir.addEventListener('click', function () {
+            contador--;
+            atualizarNumero();
+        });
+    </script>
+</body>
+
+</html>

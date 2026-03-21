@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/favicon.ico" type="image/x-icon">
+    <title>Trocador de cores!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        button {
+            padding: 50px;
+            font-size: 20px;
+            border-radius: 50px;
+            background-image: linear-gradient(to left, hsl(185, 43%, 90%), #242222);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(247, 252, 252);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Crie uma página com um botão. 
+    Cada vez que o botão for clicado, o fundo da página deve mudar para uma cor aleatória. -->
+
+    <button id="btnMudaCor">Mudar Cor de Fundo</button>
+
+    <script>
+        const btnMudaCor = document.getElementById('btnMudaCor');
+
+        function gerarCorAleatoria() {
+            const letrasHex = '0123456789ABCDEF';
+            let cor = '#';
+            for (let i = 0; i < 6; i++) {
+                cor += letrasHex[Math.floor(Math.random() * 16)];
+            }
+            return cor;
+        }
+
+        btnMudaCor.addEventListener('click', function () {
+            document.body.style.backgroundColor = gerarCorAleatoria();
+        });
+    </script>
+
+</body>
+
+</html>

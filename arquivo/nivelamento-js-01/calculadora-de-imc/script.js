@@ -1,4 +1,3 @@
-// script.js
 const form = document.querySelector('#formIMC');
 const resultadoDiv = document.querySelector('#resultado');
 const iconeSpan = document.querySelector('#icone');
@@ -19,11 +18,11 @@ const classificarIMC = imc => {
 const estiloPorClassificacao = classificacao => {
   switch (classificacao) {
     case 'Peso ideal':
-      return { cor: 'verde', icone: '✅' };          // Check verde
+      return { cor: 'verde', icone: '✅' };          
     case 'Sobrepeso':
-      return { cor: 'amarelo', icone: '⚠️' };       // Aviso amarelo
+      return { cor: 'amarelo', icone: '⚠️' };       
     default:
-      return { cor: 'vermelho', icone: '❌' };       // Cruz vermelha para obesidade/abaixo do peso
+      return { cor: 'vermelho', icone: '❌' };      
   }
 };
 

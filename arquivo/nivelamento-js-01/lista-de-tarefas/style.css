@@ -13,6 +13,7 @@ body {
     margin: 2rem auto;
     padding: 1rem;
     background: linear-gradient(100deg, #df1010, #eebaba);
+    height: 100vh;
 }
 
 header {

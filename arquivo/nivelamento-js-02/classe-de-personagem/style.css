@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(#898989, #ECECEC);
+    color: #4A2885;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

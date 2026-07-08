@@ -1,4 +1,5 @@
 <h1>Atividades propostas no DevClub!</h1>
+<hr>
 
 <h2>Momento de aplicar implementações e conhecimentos para tornar os programas práticos na rotina e úteis nos projetos!</h2>
 
